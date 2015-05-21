@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_menu_bg">#aa111213</color>
+    <color name="common_title_text">#ff565555</color>
+    <color name="common_text_yellow">#ffffe049</color>
+    <color name="album_item_bg">#fffcfcfd</color>
+    
+    
+    <color name="number_bac">#4400a3b5</color>
+    <color name="save_or_not">#4462fd40</color>
+    <color name="save_or_not_s">#6662fd40</color>
+    
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:camera="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.linj.camera.view.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.linj.camera.view.FocusImageView
+        android:id="@+id/focusImageView"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        camera:focus_focusing_id="@drawable/focus_focusing"
+        camera:focus_success_id="@drawable/focus_focused"
+        camera:focus_fail_id="@drawable/focus_focus_failed" />
+
+    <SeekBar  
+        android:id="@+id/zoomSeekBar"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:focusable="true"  
+        android:maxHeight="4.0dip"  
+        android:minHeight="4.0dip"  
+        android:paddingLeft="16.0dip"  
+        android:paddingRight="16.0dip"  
+        android:progressDrawable="@drawable/po_seekbar"  
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:thumb="@drawable/seekbar_thumb" />  
+    
+
+
+</RelativeLayout>

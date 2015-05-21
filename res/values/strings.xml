@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Camera</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="album_enter_select">选择</string>
+    <string name="num_cancel">取消</string>
+    <string name="num_save">保存</string>
+    <string name="wait_for">等待识别</string>
+    <string name="camera_scan">请将数字放入扫描框，以便进行系统识别</string>
+ 
+
+</resources>

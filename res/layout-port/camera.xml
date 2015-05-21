@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <!-- 显示预览图形 -->
+
+    <com.linj.camera.view.CameraContainer
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </com.linj.camera.view.CameraContainer>
+    
+    <com.example.camera.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/camera_bottom_bar"
+         layout="@layout/camera_bottom_bar" />
+    
+    <include
+        android:id="@+id/camera_header_bar"
+         layout="@layout/camera_header_bar" />
+
+        
+    <View 
+        android:id="@+id/v1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+	<RelativeLayout
+	    android:id="@+id/l1"
+	    android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:background="@color/number_bac"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/v1">
+	    <EditText
+	        android:id="@+id/number1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_centerInParent="true"
+	        android:background="#00FFFFFF"
+	        android:textSize="24sp"
+	        android:textStyle="bold"
+	        android:inputType="number"
+	        android:gravity="center"
+	        android:hint="@string/wait_for"
+	        android:textColor="#FF000000"
+	        android:clickable="true"
+	        android:focusable="true"
+	        android:textCursorDrawable="@null"
+	        android:focusableInTouchMode="true"
+   	        android:text="" >
+	    	<requestFocus />
+	    </EditText>
+
+	    <Button
+	        android:id="@+id/delete"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_margin="10dp"
+	        android:gravity="center"
+	        android:background="@drawable/delete_select"
+	        android:layout_alignParentRight="true"
+	        android:visibility="gone"
+	        android:layout_alignParentTop="true" />
+        
+	</RelativeLayout>	
+	<LinearLayout
+	    android:id="@+id/l2"
+	    android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/l1"
+        android:layout_alignRight="@id/l1"
+        android:background="@color/number_bac"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/l1">
+
+	    <Button
+	        android:id="@+id/cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_margin="2dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/save_or_not_select"
+	        android:text="@string/num_cancel"
+	        android:textSize="25sp"
+	        android:textStyle="bold" />
+
+	    <Button
+	        android:id="@+id/save"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+   	       	android:layout_weight="1"
+   	       	android:layout_margin="2dp"
+  		    android:background="@drawable/save_or_not_select"
+	        android:textSize="25sp"
+	        android:text="@string/num_save"
+	        android:textStyle="bold" />
+        
+	</LinearLayout>
+	
+	
+	<LinearLayout
+	    android:id="@+id/l3"
+	    android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/l1"
+        android:layout_alignRight="@id/l1"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_below="@id/l2">
+	    
+	    <include
+		    android:id="@+id/cam_key"
+		    layout="@layout/camera_keybroad"/>
+
+	</LinearLayout>
+	
+</RelativeLayout>
